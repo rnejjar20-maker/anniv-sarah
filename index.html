@@ -69,54 +69,42 @@ button:hover{
     transform:scale(1.05);
 }
 
-.bottom-right{
-    bottom:40px;
-    right:30px;
-}
-
-.top-left{
-    top:40px;
-    left:30px;
-}
-
-.bottom-center{
-    bottom:40px;
+.center{
+    top:60%;
     left:50%;
-    transform:translateX(-50%);
-}
-
-.top-right{
-    top:40px;
-    right:30px;
+    transform:translate(-50%,-50%);
 }
 
 .final{
     background:linear-gradient(135deg,#ff4fa3,#8a2be2);
 }
-
-.clickable{
-    cursor:pointer;
-}
-
 </style>
 </head>
 
 <body>
 
-<div id="page1" class="page active clickable" onclick="showPage(2)">
+<div id="page1" class="page active">
     <h1>🎂 Happy Birthday Putinha 🎂</h1>
+
+    <button class="center" onclick="showPage(2)">
+        Clique ici ✨
+    </button>
 </div>
 
-<div id="page2" class="page clickable" onclick="showPage(3)">
+<div id="page2" class="page">
     <img src="smiley.JPG">
     <p>on se croyait trop stylés</p>
+
+    <button style="top:40px; right:30px;" onclick="showPage(3)">
+        Clique ici
+    </button>
 </div>
 
 <div id="page3" class="page">
     <img src="debout.JPG">
     <p>tu pensais que t'étais violetta</p>
 
-    <button class="top-left" onclick="showPage(4)">
+    <button style="bottom:40px; right:30px;" onclick="showPage(4)">
         Clique ici
     </button>
 </div>
@@ -125,7 +113,7 @@ button:hover{
     <img src="selfie.JPG">
     <p>très beau bouton</p>
 
-    <button class="bottom-center" onclick="showPage(5)">
+    <button style="top:40px; left:30px;" onclick="showPage(5)">
         Clique ici
     </button>
 </div>
@@ -134,7 +122,7 @@ button:hover{
     <img src="homme.JPG">
     <p>ça c'est cadeau</p>
 
-    <button class="top-right" onclick="showPage(6)">
+    <button style="bottom:40px; left:30px;" onclick="showPage(6)">
         Dernier clic
     </button>
 </div>
