@@ -69,12 +69,6 @@ button:hover{
     transform:scale(1.05);
 }
 
-.center{
-    top:60%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-
 .bottom-right{
     bottom:40px;
     right:30px;
@@ -99,26 +93,23 @@ button:hover{
 .final{
     background:linear-gradient(135deg,#ff4fa3,#8a2be2);
 }
+
+.clickable{
+    cursor:pointer;
+}
+
 </style>
 </head>
 
 <body>
 
-<div id="page1" class="page active">
+<div id="page1" class="page active clickable" onclick="showPage(2)">
     <h1>🎂 Happy Birthday Putinha 🎂</h1>
-
-    <button class="center" onclick="showPage(2)">
-        Clique ici ✨
-    </button>
 </div>
 
-<div id="page2" class="page">
+<div id="page2" class="page clickable" onclick="showPage(3)">
     <img src="smiley.JPG">
     <p>on se croyait trop stylés</p>
-
-    <button class="bottom-right" onclick="showPage(3)">
-        Clique ici
-    </button>
 </div>
 
 <div id="page3" class="page">
