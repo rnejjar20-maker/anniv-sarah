@@ -6,103 +6,69 @@
 <title>Happy Birthday Putinha 🎂</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-    background:#0f0f0f;
-    color:white;
-    font-family:Arial, sans-serif;
-    overflow:hidden;
+  background:#0f0f0f;
+  color:white;
+  font-family:Arial, sans-serif;
+  overflow:hidden;
 }
 
 .page{
-    display:none;
-    width:100vw;
-    height:100vh;
-    position:relative;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-    padding:20px;
+  display:none;
+  width:100vw;
+  height:100vh;
+  position:relative;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  padding:20px;
 }
 
-.page.active{
-    display:flex;
-}
+.page.active{display:flex;}
 
 img{
-    max-width:90%;
-    max-height:75vh;
-    border-radius:20px;
-    box-shadow:0 0 30px rgba(255,255,255,0.25);
+  max-width:90%;
+  max-height:75vh;
+  border-radius:20px;
+  box-shadow:0 0 30px rgba(255,255,255,0.25);
 }
 
 h1{
-    font-size:3rem;
-    margin-bottom:20px;
+  font-size:3rem;
+  margin-bottom:20px;
 }
 
 p{
-    font-size:1.3rem;
-    margin-top:20px;
-    max-width:700px;
+  font-size:1.4rem;
+  margin-top:20px;
+  max-width:700px;
 }
 
 button{
-    position:absolute;
-    border:none;
-    padding:15px 28px;
-    border-radius:999px;
-    cursor:pointer;
-    background:#ff4fa3;
-    color:white;
-    font-size:18px;
-    font-weight:bold;
+  position:absolute;
+  border:none;
+  padding:15px 28px;
+  border-radius:999px;
+  cursor:pointer;
+  background:#ff4fa3;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
 }
 
-button:hover{
-    transform:scale(1.05);
-}
+button:hover{transform:scale(1.05);}
 
-.center{
-    top:60%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-
-.bottom-right{
-    bottom:40px;
-    right:30px;
-}
-
-.top-left{
-    top:40px;
-    left:30px;
-}
-
-.bottom-center{
-    bottom:40px;
-    left:50%;
-    transform:translateX(-50%);
-}
-
-.top-right{
-    top:40px;
-    right:30px;
-}
-
-.bottom-left{
-    bottom:40px;
-    left:30px;
-}
+.center{top:60%;left:50%;transform:translate(-50%,-50%);}
+.bottom-right{bottom:40px;right:30px;}
+.top-left{top:40px;left:30px;}
+.bottom-center{bottom:40px;left:50%;transform:translateX(-50%);}
+.top-right{top:40px;right:30px;}
 
 .final{
-    background:linear-gradient(135deg,#ff4fa3,#8a2be2);
+  background:linear-gradient(135deg,#ff4fa3,#8a2be2);
 }
 </style>
 </head>
@@ -110,74 +76,48 @@ button:hover{
 <body>
 
 <div id="page1" class="page active">
-    <h1>🎂 Happy Birthday Putinha 🎂</h1>
-    <button class="center" onclick="showPage(2)">
-        Clique ici ✨
-    </button>
+  <h1>🎂 Happy Birthday Putinha 🎂</h1>
+  <button class="center" onclick="showPage(2)">Clique ici ✨</button>
 </div>
 
 <div id="page2" class="page">
-    <img src="smiley.JPG">
-    <p>quelles gueules</p>
-
-    <button class="bottom-right" onclick="showPage(3)">
-        Clique ici
-    </button>
+  <img src="smiley.JPG">
+  <p>on se croyait trop stylés</p>
+  <button class="bottom-right" onclick="showPage(3)">Clique ici</button>
 </div>
 
 <div id="page3" class="page">
-    <img src="debout.JPG">
-    <p>on se croyait trop stylés</p>
-
-    <button class="top-left" onclick="showPage(4)">
-        Clique ici
-    </button>
+  <img src="debout.JPG">
+  <p>tu pensais que t'étais violetta</p>
+  <button class="top-left" onclick="showPage(4)">Clique ici</button>
 </div>
 
 <div id="page4" class="page">
-    <img src="selfie.JPG">
-    <p>tu pensais que t'étais Violetta</p>
-
-    <button class="bottom-center" onclick="showPage(5)">
-        Clique ici
-    </button>
+  <img src="selfie.JPG">
+  <p>très beau bouton</p>
+  <button class="bottom-center" onclick="showPage(5)">Clique ici</button>
 </div>
 
 <div id="page5" class="page">
-    <img src="homme.JPG">
-    <p>très beau bouton</p>
-
-    <button class="top-right" onclick="showPage(6)">
-        Clique ici
-    </button>
+  <img src="homme.JPG">
+  <p>ça c'est cadeau</p>
+  <button class="top-right" onclick="showPage(6)">Dernier clic</button>
 </div>
 
-<div id="page6" class="page">
-    <h1>ça c'est cadeau</h1>
-
-    <button class="bottom-left" onclick="showPage(7)">
-        Dernier clic
-    </button>
-</div>
-
-<div id="page7" class="page final">
-    <h1>HAPPY BIRTHDAY PUTINHA 🎂</h1>
-
-    <p style="font-size:1.7rem;">
-        I hope someone enjoys growing old with you,<br>
-        as much as I enjoyed growing up with you.
-    </p>
+<div id="page6" class="page final">
+  <h1>HAPPY BIRTHDAY PUTINHA 🎂</h1>
+  <p style="font-size:1.7rem;">
+    I hope someone enjoys growing old with you,<br>
+    as much as I enjoyed growing up with you.
+  </p>
 </div>
 
 <script>
 function showPage(pageNumber){
-
-    document.querySelectorAll(".page").forEach(page=>{
-        page.classList.remove("active");
-    });
-
-    document.getElementById("page"+pageNumber)
-        .classList.add("active");
+  document.querySelectorAll(".page").forEach(page=>{
+    page.classList.remove("active");
+  });
+  document.getElementById("page"+pageNumber).classList.add("active");
 }
 </script>
 
